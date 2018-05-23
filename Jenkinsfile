@@ -1,4 +1,21 @@
 pipeline {
+New_branch
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                echo 'test'
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'printt'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'jenkin'
+
     agent any
 
     stages {
@@ -24,6 +41,7 @@ pipeline {
             }
             steps {
                 sh 'make publish'
+master
 master
             }
         }
