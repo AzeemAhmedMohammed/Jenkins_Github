@@ -1,4 +1,3 @@
-New_branch1
 pipeline {
     agent any
 
@@ -14,6 +13,3 @@ pipeline {
         }
     }
 }
-
-Hey Jenkins
-master
