@@ -1,4 +1,16 @@
 pipeline {
+ New_branch1
+    agent any
+
+    stages {
+        stage('Test') {
+            steps {
+                /*  returns non-zero on test failures,
+                * using  to allow the Pipeline to continue nonetheless
+                */
+                sh 'make check || true' 
+                junit '**/target/*.xml' 
+
 New_branch
     agent any 
     stages {
@@ -41,6 +53,7 @@ New_branch
             }
             steps {
                 sh 'make publish'
+master
 master
 master
             }
